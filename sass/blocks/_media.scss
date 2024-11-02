@@ -1,0 +1,658 @@
+@media (max-width: 1400px) {
+    .container {
+        max-width: 1000px;
+    }
+
+    .about {
+        .agency {
+
+            &__descr {
+                &_text {
+                    margin-top: 0;
+                    margin-left: 116px;
+                }
+            }
+        }
+    }
+
+    .why {
+        height: 804px;
+
+        .grid-items {
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            height: 750px;
+            justify-content: space-between;
+        }
+
+        .grid-item-1 {
+            position: sticky;
+            top: 82px;
+
+            .why_photo {
+                max-width: 191px;
+                max-height: 257px;
+            }
+        }
+
+        .grid-item-2 {
+            grid-template-columns: repeat(2, 182px);
+            grid-template-rows: repeat(3, 238px);
+        }
+
+
+    }
+
+    .contacts {
+        &__wrapper {
+            column-gap: 20px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1000px;
+    }
+
+    .header {
+
+
+        &__logo {
+            img {
+                width: 100px;
+            }
+        }
+
+
+
+        &__contact {
+            .tel {
+                font-size: 16px;
+            }
+        }
+    }
+
+    .about {
+        .agency {
+            &__title {
+                font-size: 64px;
+            }
+
+            &__descr {
+                &_text {
+                    margin-top: 0;
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .founders {
+
+            &__group {
+                gap: 36px;
+
+                &_descr {
+                    width: auto;
+                    margin-top: 123px;
+                }
+            }
+        }
+    }
+
+    .why {
+
+        .grid-items {
+            grid-template-columns: 300px 660px;
+            column-gap: 80px;
+            margin-top: 57px;
+        }
+
+        .grid-item-1 {
+            .why_photo {
+                max-width: 300px;
+                max-height: 510px;
+
+            }
+        }
+
+        .grid-item-2 {
+            column-gap: 16px;
+            row-gap: 16px;
+        }
+    }
+
+    .services {
+        .tabcontainer {
+            .tabheader__items {
+                column-gap: 33px;
+            }
+        }
+
+    }
+
+    .contacts {
+        form {
+            grid-template: 40px 40px 191px 20px 45px / 485px;
+        }
+    }
+
+    .contacts__wrapper {
+        column-gap: 20px;
+    }
+}
+
+
+//1000
+
+
+@media (max-width:1000px) {
+    .container {
+        max-width: 768px;
+    }
+
+    .header {
+
+        &__logo {
+            margin: 0;
+        }
+
+        .menu {
+            display: block;
+            position: absolute;
+            top: -100vh;
+            left: 0;
+            height: 100vh;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            transition: all 0.2s;
+
+            &.active {
+                top: 0;
+                display: flex;
+                justify-content: center;
+            }
+
+            &__list {
+                list-style-type: none;
+                flex-direction: column;
+                gap: 50px;
+                padding: 0;
+            }
+
+            a {
+                font-size: 32px;
+            }
+        }
+
+        nav {
+            width: 100%;
+            transition: transform .5s, visibility .5s;
+            will-change: transform;
+
+            &__item {
+                width: 280px;
+                text-align: center;
+            }
+        }
+
+        &__menu_btn {
+            display: block;
+            z-index: 16;
+
+            &.active {
+                span {
+                    &:nth-child(1) {
+                        transform: translateY(0) rotate(45deg);
+                    }
+
+                    &:nth-child(2) {
+                        transform: translateX(-50px);
+                        opacity: 0;
+                    }
+
+                    &:nth-child(3) {
+                        transform: translateY(0) rotate(-45deg);
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    .about {
+        .agency {
+            &__title {
+                font-size: 64px;
+
+                & span {
+                    &::before {
+                        top: -1px;
+                    }
+                }
+            }
+
+
+            &__descr {
+                flex-direction: column;
+                align-items: center;
+
+                &_photo1 {
+                    max-width: 480px;
+                }
+
+                &_text {
+                    margin-top: 83px;
+                    margin: 83px 0 0 0;
+
+                }
+            }
+        }
+
+        .founders {
+
+            .title_fz64 {
+                font-size: 48px;
+            }
+
+            &__group {
+                flex-direction: column;
+                align-items: center;
+                margin-top: 0;
+
+                &_descr {
+                    margin-top: 40px;
+                    text-align: center;
+                    width: 100%;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+
+    .services {
+        .tabcontainer {
+            .tabheader__items {
+                column-gap: 16px;
+                width: 960px;
+                flex-wrap: wrap;
+            }
+
+            .tabheader__item {
+                width: 228px;
+                text-align: center;
+            }
+        }
+    }
+
+    .why {
+        .title_fz64 {
+            font-size: 48px;
+        }
+
+        .grid-items {
+            display: grid;
+            grid-template-columns: 300px 460px;
+        }
+
+
+        .grid-item-2 {
+            display: flex;
+            flex-wrap: wrap;
+
+            &__card {
+                width: 182px;
+            }
+        }
+    }
+
+    .portfolio {
+
+        .title_fz64 {
+            font-size: 48px;
+        }
+    }
+
+    .services {
+        .tabcontainer {
+            .tabheader__items {
+                justify-content: center;
+            }
+        }
+
+        .title_fz64 {
+            font-size: 48px;
+        }
+    }
+
+    .contacts {
+        .title_fz64 {
+            font-size: 48px;
+        }
+
+        &__wrapper {
+            justify-content: space-around;
+        }
+
+        &__residents {
+            flex-direction: column;
+        }
+
+        & form {
+            grid-template: 40px 40px 191px 20px 45px / 400px;
+        }
+
+        &__item {
+            br {
+                display: none;
+            }
+        }
+    }
+}
+
+
+
+//768
+
+
+
+@media (max-width:768px) {
+    .container {
+        max-width: 480px;
+    }
+
+    .about {
+        .agency {
+            min-height: 750px;
+
+            &__title {
+                font-size: 48px;
+
+                & span {
+                    &::before {
+                        top: 0;
+                    }
+                }
+            }
+
+            &__subtitle {
+                font-size: 36px;
+            }
+
+            &__descr {
+                &_photo2 {
+                    right: 91px;
+                    bottom: -238px;
+                }
+            }
+        }
+
+        .founders {
+
+            &__group_photo {
+                img {
+                    width: 100%;
+                }
+            }
+
+            .title_fz64 {
+                font-size: 36px;
+            }
+
+            &__wrapper {
+                justify-content: center;
+            }
+        }
+    }
+
+    .why {
+        .title_fz64 {
+            font-size: 36px;
+        }
+
+        .grid-items {
+            display: flex;
+            max-width: 480px;
+            height: 633px;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .grid-item-1 {
+            position: relative;
+            top: 0;
+        }
+    }
+
+    .portfolio {
+        .title_fz64 {
+            font-size: 36px;
+        }
+
+        margin-top: 250px;
+
+        a {
+            & img {
+                height: 200px;
+                width: 200px;
+            }
+        }
+    }
+
+    .contacts {
+        .title_fz64 {
+            font-size: 36px;
+        }
+
+        &__wrapper {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__residents {
+            align-items: center;
+        }
+
+        &__item {
+            max-width: 480px;
+        }
+    }
+}
+
+
+//480
+
+
+
+@media (max-width:480px) {
+    .container {
+        max-width: 320px;
+        padding: 0 16px;
+    }
+
+    .header {
+
+
+        &__logo {
+            &_link {
+                & svg {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+
+        &__contact {
+            flex-direction: column;
+        }
+    }
+
+    .about {
+        .agency {
+            &__title {
+                font-size: 36px;
+            }
+
+            &__subtitle {
+                font-size: 24px;
+            }
+        }
+
+        .founders {
+
+            .title_fz64 {
+                font-size: 24px;
+            }
+        }
+
+        .agency__descr {
+            &_photo1 {
+                img {
+                    width: 100%;
+                }
+            }
+
+            &_photo2 {
+                right: 47px;
+                bottom: 0px;
+            }
+
+            &_text {
+                margin-top: 120px;
+            }
+        }
+    }
+
+
+    .why {
+        margin-top: 80px;
+        height: 1400px;
+
+        .title_fz64 {
+            font-size: 24px;
+        }
+
+        .grid-item-2 {
+            justify-content: center;
+            width: 240px;
+        }
+    }
+
+    .portfolio {
+        margin-top: 80px;
+
+        .title_fz64 {
+            font-size: 24px;
+        }
+    }
+
+    .services {
+        .title_fz64 {
+            font-size: 24px;
+        }
+
+        .tabcontainer {
+            .tabheader__items {
+                justify-content: center;
+            }
+
+            .tabcontents {
+                flex-direction: column;
+
+                .tabcontent {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+
+    .contacts {
+        .title_fz64 {
+            font-size: 24px;
+        }
+
+        &__residents {
+            flex-direction: column;
+
+        }
+
+        & form {
+            grid-template: 40px 40px 191px 20px 45px/320px;
+        }
+    }
+}
+
+
+@media (max-width:320px) {
+    .about {
+        .agency {
+
+            &__descr {
+                &_photo1 {
+                    max-width: 240px;
+
+                    img {
+                        width: 200px;
+                    }
+                }
+
+                &_photo2 {
+                    right: 55px;
+                    bottom: -167px;
+
+                    img {
+                        width: 200px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .why {
+        height: 1450px;
+
+        .grid-items {
+            max-width: 240px;
+        }
+
+        .grid-item-2 {
+            max-width: 240px;
+            justify-content: center;
+        }
+    }
+
+    .services {
+        .tabcontainer {
+            .tabcontents {
+                flex-direction: column;
+
+                .tabcontent {
+
+
+                    &__descr {
+                        & p {
+                            font-size: 14px;
+                            text-align: justify;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .contacts {
+        &__residents {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        & form {
+            grid-template: 40px 40px 191px 20px 45px / 240px;
+        }
+    }
+}

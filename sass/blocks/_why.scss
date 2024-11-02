@@ -1,0 +1,43 @@
+.why {
+    height: 595px;
+    margin-top: 120px;
+
+    .grid-items {
+        display: grid;
+        grid-template-columns: 400px 623px;
+        justify-content: space-around;
+        height: 510px;
+    }
+
+    .grid-item-1 {
+        // height: 257px;
+
+        position: sticky;
+        top: 82px;
+        bottom: 0;
+
+        .why_photo {
+            border-radius: 15px;
+        }
+
+
+
+    }
+
+    .grid-item-2 {
+        width: 400px;
+        height: 239px;
+        display: grid;
+        grid-template-columns: repeat(3, 182px);
+        grid-template-rows: repeat(2, 238px);
+        column-gap: 36px;
+        row-gap: 34px;
+
+        &__card {
+            border: #000 1px solid;
+            padding: 8px;
+            border-radius: 15px;
+            background-color: #fff;
+        }
+    }
+}

@@ -1,0 +1,147 @@
+.header {
+    min-height: 77px;
+    background: #000000;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 11;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu {
+        display: flex;
+        align-items: center;
+
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            margin: 0;
+            gap: 20px;
+
+            &__list {
+                margin: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 30px
+            }
+
+            &__item {
+                list-style-type: none;
+
+                a {
+                    font-family: "Roboto", sans-serif;
+                    font-weight: 300;
+                    font-size: 24px;
+                    color: #fff;
+                }
+
+            }
+        }
+
+
+    }
+
+    &__logo {
+        width: 80px;
+        margin-left: 39px;
+        z-index: 15;
+
+        svg {
+            cursor: pointer;
+
+            :hover {
+                fill: $main-color;
+            }
+        }
+
+        :hover {
+            color: $main-color;
+        }
+    }
+
+    &__contact {
+        display: flex;
+        align-items: center;
+
+        .contact__item {
+            display: flex;
+            align-items: center;
+            padding-left: 8px;
+            width: 150px;
+        }
+
+        a {
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 150%;
+            color: #fff;
+            padding: 8px;
+
+            span {
+                font-weight: 900;
+                text-decoration: none;
+            }
+
+        }
+
+        :hover {
+            color: $main-color;
+            text-decoration: none;
+        }
+    }
+
+    &__menu_btn {
+        display: none;
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        border: none;
+        outline: none;
+        transition: all 3s;
+
+        & span {
+            display: block;
+            position: absolute;
+            width: 30px;
+            height: 3px;
+            right: 5px;
+            background-color: #fff;
+            transition: all 2s;
+
+            &:nth-child(1) {
+                transform: translateY(-10px);
+            }
+
+            &:nth-child(3) {
+                transform: translateY(10px);
+            }
+        }
+    }
+}
+
+///dfggdfgfg////
+/* кретик */
+.header.open {
+    .header__burger-btn {
+        span {
+            &:nth-child(1) {
+                transform: translateY(0) rotate(45deg);
+            }
+
+            &:nth-child(2) {
+                transform: translateX(-50px);
+                opacity: 0;
+            }
+
+            &:nth-child(3) {
+                transform: translateY(0) rotate(-45deg);
+            }
+        }
+    }
+}

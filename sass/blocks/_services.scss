@@ -1,0 +1,97 @@
+.services {
+    margin-top: 120px;
+
+    .tabcontainer {
+        min-height: 300px;
+        margin-top: 30px;
+
+        .tabheader {
+            // width: 1140px;
+            display: flex;
+            flex-wrap: wrap;
+
+            &__items {
+                display: flex;
+                gap: 34px;
+            }
+
+            &__item {
+                font-family: "Roboto", sans-serif;
+                font-weight: 900;
+                font-size: 20px;
+                line-height: 150%;
+                color: #808080;
+
+                &:hover {
+                    border-bottom: 3px solid #e84e1b;
+                    font-weight: 900;
+                    font-size: 20px;
+                    line-height: 150%;
+                    color: #000;
+                }
+
+                &_active {
+                    border-bottom: 3px solid #e84e1b;
+                    font-weight: 900;
+                    font-size: 20px;
+                    line-height: 150%;
+                    color: #000;
+                }
+
+            }
+
+
+
+            &__tabcontent {
+                width: 339px;
+            }
+        }
+
+        .tabcontents {
+            // display: block;
+            // flex-wrap: wrap;
+            // column-gap: 60px;
+            // row-gap: 53px;
+            // width: 1140px;
+            // min-height: 418px;
+            margin-top: 72px;
+
+
+
+            .tabcontent {
+                width: 1140px;
+                // border: #000 1px solid;
+                padding: 8px;
+                margin: 8px;
+
+                &__title {
+                    font-family: "Roboto", sans-serif;
+                    font-weight: 900;
+                    font-size: 22px;
+                    line-height: 109%;
+                    // color: #e84e1b;
+                    // text-align: center;
+                    // text-decoration: underline;
+                }
+
+                &__descr {
+                    margin-top: 12px;
+                    font-family: "Roboto", sans-serif;
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 150%;
+                    color: #1d1d1b;
+
+                    p {
+                        margin-top: 12px;
+                        font-family: "Roboto", sans-serif;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 150%;
+                        color: #1d1d1b;
+                    }
+                }
+            }
+        }
+    }
+}

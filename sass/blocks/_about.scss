@@ -1,0 +1,55 @@
+.about {
+    .agency {
+        // min-height: 850px;
+        margin-top: 120px;
+
+        &__title {
+            font-family: "Raleway", sans-serif;
+            font-weight: 900;
+            font-size: 78px;
+            display: inline-block;
+            color: red;
+
+
+
+
+        }
+
+        &__descr {
+            // height: 550px;
+            display: flex;
+
+            &_photo1 {
+                position: relative;
+                max-width: 448px;
+                height: 448px;
+                border-radius: 10px;
+                right: 0;
+                bottom: 0;
+            }
+
+            &_photo2 {
+                position: absolute;
+                right: 0;
+                bottom: -60%;
+                padding-bottom: 40%;
+
+                max-width: 65%;
+
+                img {
+                    border-radius: 10px;
+                }
+            }
+
+            &_text {
+                margin-top: 160px;
+                margin-left: 155px;
+
+                p {
+                    margin-top: 24px;
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}

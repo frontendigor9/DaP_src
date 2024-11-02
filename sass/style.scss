@@ -1,0 +1,45 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+@import 'base/variables';
+@import 'base/mixins';
+
+:root {
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    position: sticky;
+    background-color: #f0f0f0;
+
+    & lock {
+        overflow: hidden;
+    }
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+
+.divider {
+    width: 200px;
+    height: 1px;
+    border: solid #d9d9d9;
+    margin: 20px auto;
+    margin-top: 117px;
+}
+
+@import 'blocks/title';
+@import 'blocks/header';
+@import 'blocks/about';
+@import 'blocks/founders';
+@import 'blocks/services';
+@import 'blocks/why';
+@import 'blocks/portfolio';
+@import 'blocks/animate';
+@import 'blocks/contacts';
+@import 'blocks/pageup';
+@import 'blocks/developed';
+@import 'blocks/media';
